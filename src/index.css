@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Codec Pro';
-  font-weight: 300;
-  src: url('./assets/fonts/Codec/codecpro-light-webfont.woff2') format('woff2');
-}
+
 
 @font-face {
   font-family: 'Codec Pro';
@@ -19,6 +15,12 @@
   font-family: 'Codec Pro';
   font-weight: 700;
   src: url('./assets/fonts/Codec/codecpro-bold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Codec Pro';
+  font-weight: 900;
+  src: url('./assets/fonts/Codec/codecpro-extrabold-webfont.woff2') format('woff2');
 }
 
 @font-face {
@@ -35,8 +37,9 @@
 }
 
 @layer base {
-  html {
-    @apply sm:text-base text-sm min-h-screen sm:scroll-smooth
+
+  body {
+    @apply sm:text-lg text-base min-h-screen sm:scroll-smooth dark:bg-pramiry dark:text-white text-dark-blue bg-secondary transition
   }
 }
 
@@ -60,6 +63,51 @@
   background: rgb(178, 181, 216);
   background: -moz-linear-gradient(90deg, rgba(178, 181, 216, 1) 0%, rgba(204, 212, 224, 1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(178, 181, 216, 1) 0%, rgba(204, 212, 224, 1) 100%);
-  background: linear-gradient(90deg, rgba(178, 181, 216, 1) 0%, rgba(204, 212, 224, 1) 100%);
+  background: linear-gradient(90deg, rgba(178, 181, 216, 1) 0%, rgb(188, 196, 208) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2b5d8", endColorstr="#ccd4e0", GradientType=1);
+}
+
+.input-gradient {
+  background: rgb(166, 166, 166);
+  background: -moz-linear-gradient(90deg, rgba(166, 166, 166, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(166, 166, 166, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(166, 166, 166, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6a6a6", endColorstr="#ffffff", GradientType=1);
+}
+
+.scale-up-tr {
+  -webkit-animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
 }

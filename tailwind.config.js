@@ -28,11 +28,14 @@ export default {
         'dark-pink': '#B2B5D8',
       },
       boxShadow: {
-        card: '0px 35px 120px -15px #211e35',
+        cardDark: ' 3px 8px 45px 0px rgba(98,85,75,0.75), 1px 13px 78px 6px rgba(38,14,105,0.75);',
+        cardLgiht: ' 3px 8px 45px 0px rgba(178,181,216,0.75), 1px 13px 78px 6px rgba(115,115,115,0.75);',
       },
+
     },
   },
   plugins: [],
 }
 
 //main fonts text-base text-lg text-xl text-5xl text-4xl text-3xl
+//rgba(115,115,115,0.75)
