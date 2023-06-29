@@ -101,7 +101,7 @@ const Header = ({ handleThemeSwitch, theme }: HeaderProps) => {
               Sign in &#8250;
             </a>
             <button
-              className="transition font-medium flex flex-row-reverse gap-2 items-center"
+              className="transition flex flex-row-reverse gap-2 items-center dark:text-secondary text-pramiry font-bold"
               onClick={handleThemeSwitch}
               type="button"
               aria-label="Light and Dark mode"
