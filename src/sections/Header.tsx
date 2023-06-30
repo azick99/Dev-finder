@@ -14,7 +14,7 @@ const Header = ({ handleThemeSwitch, theme }: HeaderProps) => {
     <section
       id="mobile-menu"
       className={`${isMobileMenuOpen ? 'flex' : 'hidden'}  
-       absolute top-[68px] bg-black/60 text-white w-[90%] flex-col justify-center right-5 rounded-xl scale-up-tr`}
+       absolute top-[68px] bg-black/80 text-white w-[90%] flex-col justify-center right-5 rounded-xl scale-up-tr`}
       onClick={() => setIsMobileMenuOpen(false)}
     >
       <nav
